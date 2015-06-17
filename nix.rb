@@ -9,7 +9,7 @@ class Nix < Formula
 
   depends_on "cmake" => :build
   depends_on "boost" => "c++11"
-  depends_on "hdf5"
+  depends_on "homebrew/science/hdf5"
   depends_on "cppunit"
 
   needs :cxx11
