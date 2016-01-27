@@ -21,11 +21,10 @@ class Nix < Formula
     cmake_args << "-DBUILD_TESTING=OFF"
 
     system "cmake", ".", *std_cmake_args
-    system "make install"
+    system "make", "install"
   end
 
-  test do 
+  test do
     system bin/"nix-tool", "--help"
   end
-
 end
