@@ -6,6 +6,8 @@ class Nix < Formula
 
   head "https://github.com/G-Node/nix.git"
 
+  option "without-test", "Skip compile-time tests (not recommended)"
+
   depends_on "cmake" => :build
   depends_on "boost" => "c++11"
   depends_on "homebrew/science/hdf5"
@@ -20,6 +22,8 @@ class Nix < Formula
     cmake_args << "-DBUILD_TESTING=OFF"
 
     system "cmake", ".", *std_cmake_args
+    system "make"
+    system "make", "test" if build.with? "test"
     system "make", "install"
   end
 
