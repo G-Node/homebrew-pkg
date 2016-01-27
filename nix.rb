@@ -2,7 +2,7 @@ class Nix < Formula
   desc "C++ library for the NIX scientific data format and model"
   homepage "http://www.g-node.org/nix"
   url "https://github.com/G-Node/nix/archive/1.1.0.tar.gz"
-  sha256 "22db516ff71adb01587445e77d79b2b0e3f7d37d1e0c72d62bbfaf70b390cdd2"
+  sha256 "d607d96117621e5cc563002c4c161913d95db36eeb7c4e6f51afca5f6b788fcc"
 
   head "https://github.com/G-Node/nix.git"
 
