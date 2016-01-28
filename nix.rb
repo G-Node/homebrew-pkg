@@ -19,9 +19,9 @@ class Nix < Formula
     ENV.cxx11
 
     cmake_args = std_cmake_args
-    cmake_args << "-DBUILD_TESTING=OFF"
+    cmake_args << "-DBUILD_TESTING=OFF" if build.without? "test"
 
-    system "cmake", ".", *std_cmake_args
+    system "cmake", ".", *cmake_args
     system "make"
     system "make", "test" if build.with? "test"
     system "make", "install"
