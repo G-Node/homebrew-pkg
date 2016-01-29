@@ -18,6 +18,11 @@ class Nix < Formula
 
   needs :cxx11
 
+  resource "demofile" do
+    url "https://raw.githubusercontent.com/G-Node/nix-demo/master/data/spike_features.h5"
+    sha256 "b486202df0527545cd53968545d5fb3700567dbf10fbf7d9ca9d9a98fe2998ac" 
+  end
+
   def install
     ENV.cxx11
 
@@ -28,6 +33,8 @@ class Nix < Formula
   end
 
   test do
-    system bin/"nix-tool", "--help"
+    resource("demofile").stage do
+      system bin/"nix-tool", "dump", "spike_features.h5"
+    end
   end
 end
