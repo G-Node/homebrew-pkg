@@ -7,9 +7,14 @@ class Nix < Formula
   head "https://github.com/G-Node/nix.git"
 
   depends_on "cmake" => :build
-  depends_on "boost" => "c++11"
   depends_on "homebrew/science/hdf5"
   depends_on "cppunit"
+
+  if OS.mac? && MacOS.version < :mavericks
+    depends_on "boost" => "c++11"
+  else
+    depends_on "boost"
+  end
 
   needs :cxx11
 
