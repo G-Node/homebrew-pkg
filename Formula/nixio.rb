@@ -1,8 +1,8 @@
 class Nixio < Formula
   desc "C++ library for the NIX scientific data format and model"
   homepage "http://www.g-node.org/nix"
-  url "https://github.com/G-Node/nix/archive/1.4.1.tar.gz"
-  sha256 "6b559744d36b6212a35a8c82db5829ec8feeac87bf0732686bef5e2cd7c9d8a9"
+  url "https://github.com/G-Node/nix/archive/1.4.2.tar.gz"
+  sha256 "dd7a38bd20e0ecb8ebedfec04271daed8280039896d395f5ce8a6402a2433839"
   head "https://github.com/G-Node/nix.git"
 
   depends_on "cmake" => :build
