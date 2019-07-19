@@ -3,6 +3,7 @@ class GinCli < Formula
   homepage "https://gin.g-node.org/G-Node/Info/wiki/GinCliSetup"
   url "https://github.com/G-Node/gin-cli/releases/download/v1.9/gin-cli-1.9-macos-amd64.tar.gz"
   sha256 "5ff7c9d87739f9e556d864120577631333cc8e0656c2b8b0c7744310cabd7f5c"
+  version "1.9"
   head "https://github.com/G-Node/gin-cli.git"
 
   bottle :unneeded
