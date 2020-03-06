@@ -6,3 +6,4 @@ To install any of these formulae use:
 `brew install G-Node/pkg/<formula>`.
 
 - NIXIO: [[repository](https://github.com/G-Node/NIX)] [[formula](Formula/nixio.rb)]
+- GIN CLI: [[repository](https://github.com/G-Node/gin-cli)] [[formula](Formula/gin-cli.rb)]
